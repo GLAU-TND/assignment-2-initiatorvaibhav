@@ -57,4 +57,13 @@ public class MyQueue {
         }
         queue.temp = queue.front;
     }
+
+    public void queueLast(Node node) {
+        if (front == null) {
+
+            front = node;
+            last = node;
+            temp = node;
+        }
+    }
 }
