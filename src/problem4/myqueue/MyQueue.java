@@ -18,5 +18,35 @@ public class MyQueue {
         size = 0;
     }
 
+    public Node getFront() {
+        return front;
+    }
 
+    public void setFront(Node front) {
+        this.front = front;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public Node getLast() {
+        return last;
+    }
+
+    public void setLast(Node last) {
+        this.last = last;
+    }
+
+    public Node getTemp() {
+        return temp;
+    }
+
+    public void setTemp(Node temp) {
+        this.temp = temp;
+    }
 }
