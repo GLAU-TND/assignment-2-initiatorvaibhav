@@ -16,7 +16,9 @@ import java.util.Scanner;
 public class MyMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        MyBinarySearchTree binarySearch;
-        MyQueue queue;
+        MyBinarySearchTree binarySearch = null;
+        MyQueue queue = null;
+
+
     }
 }
