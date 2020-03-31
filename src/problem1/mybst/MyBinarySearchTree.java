@@ -8,6 +8,7 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 import problem4.myqueue.MyQueue;
+import problem4.myqueue.Node;
 
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
@@ -78,6 +79,21 @@ public class MyBinarySearchTree {
         if (newNode == null) {
             newNode = new TreeNode();
         }
+        try {
+            if (newNode.getData() <= root.getData()) {
+                if (root.getLeft() == null) {
+                    root.setLeft(newNode);
+
+                    prefix.queueLast(new Node(newNode));
+                    newNode = null;
+                } else {
+                    System.out.println(" not modifying left side");
+                    insert(root.getLeft());
+                }
+            }
+        } catch (NullPointerException e) {
+            e.getMessage();
+        }
     }
 
     public void setRoot() {
@@ -88,4 +104,6 @@ public class MyBinarySearchTree {
             newNode = null;
         }
     }
+
+
 }
