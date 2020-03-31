@@ -73,4 +73,11 @@ public class MyBinarySearchTree {
     public void setPostfix(MyQueue postfix) {
         this.postfix = postfix;
     }
+
+    public void insert(TreeNode root) {
+        if (newNode == null) {
+            newNode = new TreeNode();
+        }
+    }
+
 }
