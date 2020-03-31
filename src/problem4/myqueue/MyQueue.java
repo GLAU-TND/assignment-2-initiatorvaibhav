@@ -13,5 +13,10 @@ public class MyQueue {
     private Node last;
     private Node temp;
 
+    public MyQueue() {
+        front = last = temp = null;
+        size = 0;
+    }
+
 
 }
