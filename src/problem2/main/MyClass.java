@@ -3,6 +3,7 @@ package problem2.main;
 import problem1.mybst.MyBinarySearchTree;
 import problem1.node.TreeNode;
 import problem4.myqueue.MyQueue;
+import problem4.myqueue.Node;
 
 public class MyClass {
     private MyBinarySearchTree binarySearchTree;
@@ -58,6 +59,12 @@ public class MyClass {
             return false;
         }
         return false;
+    }
+
+    public void preOrder(TreeNode node) {
+        prefix.queueLast(new Node(node));
+        preOrder(node.getLeft());
+
     }
 
 
