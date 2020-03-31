@@ -120,5 +120,13 @@ public class MyBinarySearchTree {
         }
     }
 
+    public void countUsed(TreeNode node) {
+        countUsed(node.getLeft());
+        if (node.getLeft() != null) {
+            count++;
+        }
+        countUsed(node.getRight());
+    }
+
 
 }
