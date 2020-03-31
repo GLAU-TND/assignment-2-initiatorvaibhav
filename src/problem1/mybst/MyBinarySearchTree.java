@@ -80,4 +80,12 @@ public class MyBinarySearchTree {
         }
     }
 
+    public void setRoot() {
+        newNode = new TreeNode();
+        if (root == null) {
+            root = newNode;
+            temp = root;
+            newNode = null;
+        }
+    }
 }
