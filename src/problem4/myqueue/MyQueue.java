@@ -81,4 +81,12 @@ public class MyQueue {
         preOrder(treenode.getRight());
     }
 
+    public void printNext(int data) {
+        temp = front;
+        while (temp.getNode().getData() != data && temp != null) {
+            temp = temp.getNext();
+        }
+
+    }
+
 }
