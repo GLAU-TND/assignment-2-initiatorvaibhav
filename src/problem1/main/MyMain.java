@@ -20,6 +20,9 @@ public class MyMain {
         System.out.println(" Root " + binarySearchTree.getRoot().getData());
 
         queue.queuePrint(binarySearchTree.getPrefix());
+
+        binarySearchTree.countUsed(binarySearchTree.getRoot());
+        System.out.println(binarySearchTree.getCount());
     }
 
 }
