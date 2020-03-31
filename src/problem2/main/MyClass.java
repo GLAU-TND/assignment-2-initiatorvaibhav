@@ -70,7 +70,6 @@ public class MyClass {
     public void postOrder(TreeNode node) {
         prefix.queueLast(new Node(node));
         preOrder(node.getRight());
-
     }
 
 
