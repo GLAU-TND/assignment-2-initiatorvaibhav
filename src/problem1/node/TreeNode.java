@@ -10,10 +10,23 @@ import java.util.Scanner;
 
 public class TreeNode {
     private TreeNode left;
+
+    public TreeNode getLeft() {
+        return left;
+    }
+
+    public TreeNode getRight() {
+        return right;
+    }
+
+    public int getData() {
+        return data;
+    }
+
     private TreeNode right;
     private int data;
 
-    Scanner scanner = new Scanner( System.in );
+    Scanner scanner = new Scanner(System.in);
 
     public TreeNode() {
         System.out.println("Please enter data ");
