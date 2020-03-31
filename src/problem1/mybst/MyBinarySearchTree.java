@@ -133,5 +133,9 @@ public class MyBinarySearchTree {
         prefixOrder(node.getRight());
     }
 
+    public void postfixOrder(TreeNode node) {
+        postfixOrder(node.getLeft());
+        postfixOrder(node.getRight());
+    }
 
 }
