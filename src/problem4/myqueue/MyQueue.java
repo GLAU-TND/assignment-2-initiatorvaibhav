@@ -86,7 +86,11 @@ public class MyQueue {
         while (temp.getNode().getData() != data && temp != null) {
             temp = temp.getNext();
         }
-
+        try {
+            assert temp != null;
+            System.out.println(temp.getNext().getNode().getData());
+        } catch (NullPointerException e) {
+            e.getMessage();
+        }
     }
-
 }
