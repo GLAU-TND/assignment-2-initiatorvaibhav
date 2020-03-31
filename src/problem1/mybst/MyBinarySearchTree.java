@@ -128,9 +128,9 @@ public class MyBinarySearchTree {
         countUsed(node.getRight());
     }
 
-    public void preOrder(TreeNode node) {
-        preOrder(node.getLeft());
-        preOrder(node.getRight());
+    public void prefixOrder(TreeNode node) {
+        prefixOrder(node.getLeft());
+        prefixOrder(node.getRight());
     }
 
 
