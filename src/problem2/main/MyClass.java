@@ -1,6 +1,7 @@
 package problem2.main;
 
 import problem1.mybst.MyBinarySearchTree;
+import problem1.node.TreeNode;
 import problem4.myqueue.MyQueue;
 
 public class MyClass {
@@ -39,4 +40,28 @@ public class MyClass {
         this.postFix = postFix;
     }
 
+    public boolean Analysing1(TreeNode root) {
+        prefix.queuePrint(prefix);
+        postFix.queuePrint(postFix);
+        int size = prefix.getSize();
+        int count = 0;
+        int preData = 0;
+        int postData = 0;
+
+        if (size % 2 == 1) {
+            while (count < size / 2 && prefix.getTemp() != null) {
+                prefix.getTemp().getNext();
+                count++;
+            }
+        } else {
+            System.out.println(" Number of Tree ");
+            return false;
+        }
+        return false;
+    }
+
+
 }
+
+
+
