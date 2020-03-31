@@ -8,5 +8,10 @@ public class MyClass {
     private MyQueue prefix;
     private MyQueue postFix;
 
+    public MyClass() {
+        binarySearchTree = new MyBinarySearchTree();
+        prefix = new MyQueue();
+        postFix = new MyQueue();
+    }
 
 }
