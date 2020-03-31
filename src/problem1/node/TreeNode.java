@@ -18,6 +18,8 @@ public class TreeNode {
     public TreeNode() {
         System.out.println("Please enter data ");
         data = scanner.nextInt();
+        left = null;
+        right = null;
 
     }
 
