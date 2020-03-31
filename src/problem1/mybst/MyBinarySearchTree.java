@@ -94,6 +94,21 @@ public class MyBinarySearchTree {
         } catch (NullPointerException e) {
             e.getMessage();
         }
+        try {
+            if (newNode.getData() <= root.getData()) {
+                if (root.getRight() == null) {
+                    root.setRight(newNode);
+
+                    prefix.queueLast(new Node(newNode));
+                    newNode = null;
+                } else {
+                    System.out.println(" not modifying left side");
+                    insert(root.getRight());
+                }
+            }
+        } catch (NullPointerException e) {
+            e.getMessage();
+        }
     }
 
     public void setRoot() {
