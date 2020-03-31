@@ -49,4 +49,12 @@ public class MyQueue {
     public void setTemp(Node temp) {
         this.temp = temp;
     }
+
+    public void queuePrint(MyQueue queue) {
+        while (queue.temp != null) {
+            System.out.println(queue.temp.getNode().getData());
+            queue.temp = queue.temp.getNext();
+        }
+        queue.temp = queue.front;
+    }
 }
