@@ -8,4 +8,10 @@ package problem4.myqueue;
 // to create queue to store pre - order successor
 
 public class MyQueue {
+    private Node front;
+    private int size;
+    private Node last;
+    private Node temp;
+
+
 }
