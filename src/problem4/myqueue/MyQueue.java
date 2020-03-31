@@ -76,7 +76,9 @@ public class MyQueue {
     }
 
     public void preOrder(TreeNode treenode) {
-
+        queueLast(new Node(treenode));
+        preOrder(treenode.getLeft());
+        preOrder(treenode.getRight());
     }
 
 }
